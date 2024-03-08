@@ -1,0 +1,99 @@
+#calendar-page main {
+    margin: 0 auto;
+    width: 970px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#calendar {
+    text-align: center;
+}
+
+#calendar-page h1 {
+    margin: 10vw 0;
+}
+
+#month-selector {
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.month-arrow {
+    margin: 0 16px;
+    padding: 2px 6px;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+#current-month {
+    font-size: 20px;
+}
+
+#calendar-body {
+    margin: 0 auto;
+    margin-bottom: 5vw;
+}
+
+#calendar-body>div:first-child {
+    border-bottom: 1px solid black;
+}
+
+.calendar-row {
+    display: flex;
+    text-align: center;
+}
+
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-day--open {
+    background-color: #dcffdc;
+
+}
+
+.calendar-day--closed {
+    background-color: #e6e6e6;
+    color: #666666;
+}
+
+.day-name,
+.calendar-day {
+    margin: 2px;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.day-name {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.day-number {
+    margin-bottom: 16px;
+    font-size: 18;
+    font-weight: bold;
+}
+
+#buy-ticket {
+    padding: 12px;
+    background-color: #0c6;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+}  
+
+#newsletter {
+    margin: 10vw 0;
+}
+
+#newsletter input {
+    padding: 6px;
+    border-radius: 4px;
+}
