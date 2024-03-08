@@ -1,214 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-<body>
+<body id="calendar-page">
     <main>
-        <!-- Titolo -->
         <h1>Calendario di apertura</h1>
-        <!-- Calendario -->
-        <span><</span>
-        <span>Aprile 2045</span>
-        <span>></span>
-        <div id="calendar">
-            <!-- Nome giorni -->
-            <div class="calendar-row">
-                <div class="day-name">Lun</div>
-                <div class="day-name">Mar</div>
-                <div class="day-name">Mer</div>
-                <div class="day-name">Gio</div>
-                <div class="day-name">Ven</div>
-                <div class="day-name">Sab</div>
-                <div class="day-name">Dom</div>
+        <section id="calendar">
+            <div id="calendar-body">
+                <div id="month-selector">
+                    <span class="month-arrow"><</span>
+                            <span id="current-month">Aprile 2024</span>
+                            <span class="month-arrow">></span>
+                </div>
+                <div class="calendar-row">
+                    <div class="day-name">Lun</div>
+                    <div class="day-name">Mar</div>
+                    <div class="day-name">Mer</div>
+                    <div class="day-name">Gio</div>
+                    <div class="day-name">Ven</div>
+                    <div class="day-name">Sab</div>
+                    <div class="day-name">Dom</div>
+                </div>
+                <div class="calendar-row">
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">1</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">2</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">3</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">4</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">5</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">6</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">7</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                </div>
+                <div class="calendar-row">
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">8</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">9</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">10</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">11</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">12</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">13</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">14</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                </div>
+                <div class="calendar-row">
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">15</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">16</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">17</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">18</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">19</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">20</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">21</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                </div>
+                <div class="calendar-row">
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">22</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">23</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">24</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">25</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">26</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">27</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">28</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                </div>
+                <div class="calendar-row">
+                    <div class="calendar-day calendar-day--closed">
+                        <span class="day-number">29</span>
+                        <span>Chiuso</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">30</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">1</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">2</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">3</span>
+                        <span>09:00 - 14:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">4</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                    <div class="calendar-day calendar-day--open">
+                        <span class="day-number">5</span>
+                        <span>14:00 - 20:00</span>
+                    </div>
+                </div>
             </div>
-            <!-- Giorni -->
-            <div class="calendar-row">
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-            </div>
-            <div class="calendar-row">
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-            </div>
-            <div class="calendar-row">
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-            </div>
-            <div class="calendar-row">
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-            </div>
-            <div class="calendar-row">
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="day-number">1</div>
-                    <div class="opnening-status">Chiuso</div>
-                </div>
-            </div>
-        </div>
-        <a href="">Compra un biglietto</a>
-        <!-- Immagine -->
-        <img src="" alt="">
-        <!-- Newsletter -->
-        <h2>Iscriviti alla nostra newsletter!</h2>
-        <form action="">
-            <label for=""></label>
-            <input type="email" placeholder="Indirizzo e-mail">
-            <input type="submit" value="Invia">
-        </form>
+            <a id="buy-ticket" href="/buy-ticket.html">Compra un biglietto</a>
+        </section>
+        <section id="newsletter">
+            <h2>Iscriviti alla nostra newsletter!</h2>
+            <form action="/newsletter.php">
+                <label for="email">E-mail</label>
+                <input id="email" type="email">
+                <input type="submit" value="Invia">
+            </form>
+        </section>
     </main>
-
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #calendar {
-            border: 1px solid black;
-        }
-
-        .calendar-row {
-            display: flex;
-        }
-        
-        .day-name, .calendar-day {
-            width: 100%;
-        }
-        
-    </style>
-
 </body>
-
 </html>
