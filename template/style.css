@@ -60,7 +60,7 @@
 
 .calendar-day--closed {
     background-color: #e6e6e6;
-    color: #666666;
+    color: #474747;
 }
 
 .day-name,
@@ -99,7 +99,7 @@
     border-radius: 4px;
 }
 
-/* Css Marisa */
+body
 {
     font-family: 'Nunito', sans-serif;      
 }
